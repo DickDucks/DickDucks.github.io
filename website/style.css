@@ -1,0 +1,40 @@
+html {
+	background-color: black;
+}
+
+audio {
+	visibility: hidden;
+}
+
+pre {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-5%) translateY(-5%);
+
+	font-weight: bold;
+	font-size: 16px;
+	background: repeating-linear-gradient(-45deg, darkturquoise 0%, darkviolet 20%, deeppink 30%, deepskyblue 50%);
+	background-size: 60vw 60vw;
+	animation: rainbow 5s linear infinite forwards;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+@keyframes rainbow {
+	0% {
+		background-position-x: 0%;
+	}
+	100% {
+		background-position-x: 60vw;
+	}
+}
